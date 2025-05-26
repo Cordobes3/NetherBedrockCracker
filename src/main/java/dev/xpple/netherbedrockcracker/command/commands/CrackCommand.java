@@ -75,7 +75,7 @@ public class CrackCommand {
 
     private static int crack(CustomClientCommandSource source, int threads, BedrockGeneration bedrockGen, OutputMode mode) throws CommandSyntaxException {
         ResourceKey<Level> dimension = source.getDimension();
-
+        //remove bc i needed
         if (currentTask != null && !currentTask.isDone()) {
             throw ALREADY_CRACKING_EXCEPTION.create();
         }
